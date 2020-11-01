@@ -1,2 +1,3 @@
 # programming-assignment-solutions
-Solutions to programming assignments/prompt/problems of mine.
+
+Despite having non-existent programming skill, I still sometimes get assigned as TA to CS courses. Here's the solutions to problems I make.
