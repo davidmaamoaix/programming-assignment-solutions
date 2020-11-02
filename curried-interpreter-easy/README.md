@@ -37,7 +37,7 @@ To illustrate:
 
 However, this is not valid Python syntax. We can, however, add parenthesis around each token to make it valid:
 
-```bubbly
+```python
 start(push)(4)(push)(9)(div)(end)
 ```
 
@@ -49,8 +49,8 @@ Your goal is to create appropriate definitions for `start`, `end`, `push`, `add`
 
 For instance, typing this in a shell should result in:
 
-```bubbly
->>> (start)(push)(5)(push)(8)(push)(1)(add)(add)(end)
+```python
+>>> start(push)(5)(push)(8)(push)(1)(add)(add)(end)
 14
 ```
 
