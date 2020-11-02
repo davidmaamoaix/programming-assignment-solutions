@@ -1,5 +1,7 @@
 # simple-autograd
 
+__Difficulty: \*\*\_\_\___
+
 Consider this mathematical expression:
 ```
 y = (m * x) + b
