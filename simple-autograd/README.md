@@ -13,7 +13,7 @@ Its computational graph might look like:
         |
         +
        / \
-      O   b
+      K   b
      /
     *
    / \
