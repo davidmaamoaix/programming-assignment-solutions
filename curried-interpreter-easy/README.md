@@ -43,8 +43,20 @@ start(push)(4)(push)(9)(div)(end)
 
 which returns `2` in this case.
 
-This is similar to the syntax mentioned in [Background](##Background).
+This is similar to the syntax mentioned in [Background](#Background).
+
+Your goal is to create appropriate definitions for `start`, `end`, `push`, `add`, `sub`, `mul` and `div` so that the bubbly language is valid Python syntax, and evaluates to the correct value.
+
+For instance, typing this in a shell should result in:
+
+```bubbly
+>>> (start)(push)(5)(push)(8)(push)(1)(add)(add)(end)
+14
+```
+
+__Please note that custom classes are not allowed in the solution, as Python's \_\_call\_\_ method makes this problem too trivial.__ Your solution should use functions and lambdas to achieve this instead.
 
 ## Notes
 - If you haven't played with functional programming before, consider this problem a 2-star.
+- Don't worry about division by `0`. There won't be any test cases on that.
 - I also published a puzzle version of this problem on Codewars [here](https://www.codewars.com/kata/5f7a715f6c1f810017c3eb07).
