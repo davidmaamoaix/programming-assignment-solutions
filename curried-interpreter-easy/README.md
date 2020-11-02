@@ -43,7 +43,7 @@ start(push)(4)(push)(9)(div)(end)
 
 which returns `2` in this case.
 
-This is similar to the syntax mentioned in [Background](#Background).
+This is similar to the syntax mentioned in [Background](##Background).
 
 ## Notes
 - If you haven't played with functional programming before, consider this problem a 2-star.
