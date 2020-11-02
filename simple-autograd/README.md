@@ -24,7 +24,7 @@ With this in mind, create a `Variable` and `Constant` class such that they suppo
 ```python
 >>> x = Variable(name='x')
 >>> m = Variable(name='m')
->>> c = Constant('5')
+>>> c = Constant(5)
 >>>
 >>> y = m * x * c
 >>>
