@@ -1,6 +1,6 @@
 # simple-autograd
 
-__Difficulty: \*\*\_\_\___
+__Difficulty: \* \* \_ \_ \_ __
 
 Consider this mathematical expression:
 ```
