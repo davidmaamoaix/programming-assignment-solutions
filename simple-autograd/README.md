@@ -67,6 +67,6 @@ The following operations should be supported:
 - Division(/)
 - Power(\*\*)
 
-__Notes:__
+## Notes
 - The power term `c` will always be a constant in any `a ^ c` for simplicity
 - Constant folding is not required, but encouraged
