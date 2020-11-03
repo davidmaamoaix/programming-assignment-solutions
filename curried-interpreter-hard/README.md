@@ -53,4 +53,15 @@ More examples:
 150
 ```
 
+Your interpreter should also allow nested operators. Since each operator takes in exactly 2 parameters, it is possible to deduce the hierarchy of the nested structure. Operator functions are right associative.
+
+This:
+```
+add add 5 add 3 2 5
+```
+has the structure of this:
+```
+add(add(5, add(3, 2)), 5)
+```
+
 __Like the easier version of this problem, please note that custom classes are not allowed in the solution, as Python's \_\_call\_\_ overloading makes this problem too trivial.__ Your solution should use functions and lambdas to achieve this instead.
