@@ -45,7 +45,7 @@ which returns `2` in this case.
 
 This is similar to the syntax mentioned in [Background](#Background).
 
-Your goal is to create appropriate definitions for `start`, `end`, `push`, `add`, `sub`, `mul` and `div` so that the bubbly language is valid Python syntax, and evaluates to the correct value.
+Your goal is to create appropriate definitions for `start`, `end`, `push`, `add`, `sub`, `mul` and `div` so that the custom language is valid Python syntax, and evaluates to the correct value.
 
 For instance, typing this in a shell should result in:
 

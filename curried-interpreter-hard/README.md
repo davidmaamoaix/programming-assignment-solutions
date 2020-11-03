@@ -8,7 +8,19 @@ _This is a harder version of [Curried Interpreter (Easy)](/curried-interpreter-e
 
 You are going to make yet another interpreter similar to [Curried Interpreter (Easy)](/curried-interpreter-easy), but with different tokens and syntax (this version is more like a proper interpreted language).
 
-The following custom syntax
+Your goal is to create a programming language with the following tokens:
+
+- `start`: marks the start of a program
+- `return_` (`return_ <value>`): marks the end of a program, and returns the given `<value>`
+- `let` (`let <var_name> <value>`): sets the variable `<var_name>` to the given `<value>`
+- `add` (`add <value> <value>`) returns the sum of the two `<value>`
+- `sub` (`sub <value> <value>`) returns the result of the first `<value>` minus the second `<value>`
+- `mul` (`mul <value> <value>`) returns the product of the two `<value>`
+- `div` (`div <value> <value>`) returns the result of the first `<value>` divided by the second `<value>` (integer division)
+
+Each `<value>` can either be an integer (immediate value), a string (value of the variable), or an operator (`add`, `sub`, etc) (return value of the operator).
+
+Demo:
 ```
 start
 let 'my_var' add 5 8
@@ -30,11 +42,15 @@ Just like the easier version of this problem, each token is passed in via a func
 26
 ```
 
-Your goal is to create appropiate definitions for the following tokens so that the above syntax is valid Python:
-- `start`:
-- `return_` (`return_ <value>`)
-- `let` (`let <variable_name> <value>`)
-- `add` (`add <value> <value>`)
-- `sub` (`sub <value> <value>`)
-- `mul` (`mul <value> <value>`)
-- `div` (`div <value> <value>`)
+More examples:
+```python
+>>> start(let)('x')(20)(return_)(sub)(10)('x')
+-10
+```
+
+```python
+>>> start(return_)(mul)(10)(15)
+150
+```
+
+__Like the easier version of this problem, please note that custom classes are not allowed in the solution, as Python's \_\_call\_\_ overloading makes this problem too trivial.__ Your solution should use functions and lambdas to achieve this instead.
