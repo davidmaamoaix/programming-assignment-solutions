@@ -64,4 +64,10 @@ has the structure of this:
 add(add(5, add(3, 2)), 5)
 ```
 
+And therefore this should be valid syntax:
+```python
+>>> start(return_)(add)(add)(5)(add)(3)(2)(5)
+15
+```
+
 __Like the easier version of this problem, please note that custom classes are not allowed in the solution, as Python's \_\_call\_\_ overloading makes this problem too trivial.__ Your solution should use functions and lambdas to achieve this instead.
